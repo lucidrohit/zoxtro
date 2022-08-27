@@ -1,10 +1,10 @@
 .home{
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     position: relative;
-    background-size:110rem 110rem;
+    background-size:140rem 140rem;
     background-repeat: no-repeat;
-    background-position:top 12.5vh left 40vw;
+    background-position:top 10vh left 40vw;
     margin: auto;
 
 
@@ -28,7 +28,7 @@
 
        
         &__heading{
-            font-size: 4.4rem;
+            font-size: 4rem;
             font-family: var(--font--primary);
             line-height: 166%;
             width:24ch;
@@ -46,7 +46,7 @@
         }
         &__tagline{
             margin-top: 1rem;
-            font-size: 2.4rem;
+            font-size: 2rem;
             font-family: var(--font-secondary);
             line-height: 131%;
             font-weight: 100;
@@ -106,19 +106,20 @@
 
     &__foot ul{
         position: absolute;
-        bottom: 2rem;
+        bottom: 4rem;
 
         display: flex;
         list-style: none;
+        font-weight: 300;
         font-size: 2rem;
         font-family: var(--color-secondary);
         height: fit-content;
         width: fit-content;
-        padding-left: 3rem;
+        margin-left: 5rem;
 
         li:nth-of-type(1){
             width: 11rem;
-            height: 1.5px;
+            height: 1px;
             background-color: var(--color-secondary);
             position: relative;
             top: 1.25rem;
