@@ -1,8 +1,6 @@
 .home{
-    z-index: -1;
-    top: -65px;
     width: 100%;
-    height: calc(100vh - 30px);
+    height: calc(100vh - 80px);
     position: relative;
     background-size:110rem 110rem;
     background-repeat: no-repeat;
@@ -107,9 +105,9 @@
     }
 
     &__foot ul{
+        position: absolute;
+        bottom: 2rem;
 
-        position: relative;
-        top: -7rem;
         display: flex;
         list-style: none;
         font-size: 2rem;

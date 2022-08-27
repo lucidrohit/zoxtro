@@ -29,4 +29,21 @@ body{
   overflow-x: hidden;
 }
 
+a,a:hover,:active{
+  text-decoration: none;
+}
+
+a{
+  z-index: 1;
+  color: black;
+
+}
+
+a:hover{
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+
+
 

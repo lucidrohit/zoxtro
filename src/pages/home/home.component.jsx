@@ -27,9 +27,9 @@ const Home = () => {
             <div className="home__foot">
                 <ul>
                     <li></li>
-                    <li>Fb</li>
-                    <li>Tw</li>
-                    <li>Ig</li>
+                    <li><a href="https://www.facebook.com/Zoxtro-108315835339179/">Fb</a></li>
+                    <li><a href="https://twitter.com/zoxtro">Tw</a></li>
+                    <li><a href="https://www.instagram.com/zoxtro/">Ig</a></li>
                 </ul>
             </div>
         </div>
