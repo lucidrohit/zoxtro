@@ -1,0 +1,32 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --color-primary: #F8EBE9;
+  --color-secondary: #C1213C;
+  --color-text: #000000;
+  --color-button-text: #FFFAF1;
+
+  --font--primary: 'Anton', sans-serif;
+  --font--secondary: "Source sans pro", sans-serif;
+
+
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: var(--font--secondary);
+  background-color: var(--color-primary);
+  width: 100vw;
+  height: 100vh;
+  font-size: inherit;
+  overflow-x: hidden;
+}
+
+
