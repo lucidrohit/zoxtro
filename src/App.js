@@ -1,13 +1,13 @@
-import './App.css';
+import './App.scss';
+import NavBar from './components/navbar/navbar.component';
+import "./pages/home/home.component"
+import Home from './pages/home/home.component';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <pre>
-        <h1 style={{color:"red",display:"inline-block"}}>Zoxtro</h1> is live.
-      </pre>
-      </header>
+    <NavBar/>
+    <Home/>
     </div>
   );
 }
