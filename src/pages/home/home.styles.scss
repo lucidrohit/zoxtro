@@ -1,10 +1,9 @@
 .home{
     width: 100%;
     height: calc(100vh - 100px);
-    position: relative;
     background-size:130rem 130rem;
     background-repeat: no-repeat;
-    background-position:top 0 left 30vw;
+    background-position:top 0 left 35vw;
     margin: auto;
 
 
@@ -16,11 +15,13 @@
         align-items: flex-start;
 
         
+        @media screen and (max-width: 800px) {
+            margin-top: 5rem;
+        }
 
 
         
     &_content{
-        width: 60%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -30,6 +31,8 @@
 
        
         &__heading{
+            z-index: 1;
+
             font-size: 4rem;
             font-family: var(--font--primary);
             line-height: 148%;
@@ -53,9 +56,12 @@
         div{
             position: relative;
             left: 4rem;
+            z-index: 1;
+
         }
 
         &__tagline{
+            z-index: 1;
 
             margin-top: 1rem;
             font-size: 2rem;
@@ -88,7 +94,18 @@
     
     }
     &_product{
-        height: 100%;
+            z-index: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+        &__image{
+            margin-right: 12rem;
+            margin-top: 22rem;
+            width: 42vw;
+        }
     }
 
     @media screen and (max-width: 1000px) {
@@ -99,10 +116,9 @@
 
         &_content{
             margin: auto;
-            padding: 10px;
-                width: 100%;
+
             &__heading{
-                width: auto;
+                width: 24ch;
                 font-size: 3.5rem;
             }
             &_mini{
@@ -124,12 +140,38 @@
             }
       }
     }
+
+    @media screen and (max-width: 1122px) {
+        flex-direction: column;
+
+        &_product{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__image{
+                margin: 0;
+                width: auto;
+                max-width: 47rem;
+                min-width: 30rem;
+                margin-top: 10rem;
+
+            }
+        }
+    }
+    }
+
+    &__foot ul{
+        @media screen and (max-width: 1122px) {
+            li{
+                display: none;
+            }
+        }
     }
 
     &__foot ul{
         position: absolute;
         bottom: 4rem;
-
+        padding: 5rem;
         display: flex;
         list-style: none;
         font-weight: 300;
@@ -152,6 +194,9 @@
             height: fit-content;
             margin-right: 3rem;
         }
+
+        
+
     }
     
 
