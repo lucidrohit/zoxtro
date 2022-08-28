@@ -60,15 +60,18 @@
             z-index: 4;
             position: absolute;
             flex-direction: column;
-            right: -50vw; 
+            right: 0; 
             top: 20rem;
             transition: all ease-in-out 0.25s;
+            transform-origin: right;
+            transform: rotateY(90deg);
             li{
                 margin-top: 5rem;
             }
 
             &.is-active{
-                transform: translateX(-60vw);
+                transform: rotateY(0deg);
+
             }
     
         }
@@ -92,16 +95,18 @@
             content: "";
             position: absolute;
             top: 0rem;
-            right: -60vw;
-            width: 60vw;
+            right: -7vw;
+            width: 70vw;
             height: 100vh;
             background-color: rgba(255, 255, 255,1);
             transition: all ease-in-out 0.25s;
+            transform-origin: right;
+            transform: rotateY(90deg);
         }
     }
     .hamburger.is-active{
         &::before{
-            transform: translateX(-60vw);
+            transform: rotateY(0deg);
         }
     }
         
