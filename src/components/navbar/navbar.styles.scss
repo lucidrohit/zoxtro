@@ -10,10 +10,14 @@
         width: 100px;
         border-right: white 1px solid;
         img{
-            width: 50px;
+            width: 4rem;
             height: 100%;
             margin: 0 25px;
             cursor: pointer;
+            transition: 0.25s all ease-in-out;
+            &:hover{
+                transform: scale(1.5);
+            }
             
         }
     }
@@ -21,7 +25,8 @@
         width: 100%;
     ul{
         list-style: none;
-        font-size: 2rem;
+        font-size: 1.8rem;
+        font-weight: 300;
         font-family: var(--font--secondary);
         display: flex;
         justify-content: center;
@@ -29,13 +34,13 @@
 
         li{
             position: relative;
-            margin-right: 4rem;
+            margin-right: 3rem;
             cursor: pointer;
             padding: 7px;
-
+            
 
         }
-        .active{
+        .active, li:hover{
             color: var(--color-secondary);
             &::after{
                 content: "";
@@ -43,8 +48,9 @@
                 background: var(--color-secondary);
                 bottom: 0;
                 left: 30%;
-                height: 2px;
+                height: 1px;
                 width: 40%;
+                border-radius: 1px;
 
             }
         }

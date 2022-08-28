@@ -11,14 +11,15 @@ const Home = () => {
                         </p>
                         PROVIDING THE BEST QUALITY ANIME MERCHANDISE WITH THE MOST AESTHETIC DESIGNS
                     </h1>
-                    <p className="home__cta_content__tagline">
-                        Combining the best embroidery designs with the best quality fabric out there to give you the experience that you deserve.
-                        <div>
-                            <button className="home__cta_content__tagline__reg_btn">
-                                Pre-register
-                            </button>
-                        </div>
-                    </p>
+                    <div>
+                        <p className="home__cta_content__tagline">
+                            Combining the best embroidery designs with the best quality fabric out there to give you the experience that you deserve.
+                                <button className="home__cta_content__tagline__reg_btn">
+                                    Pre-register
+                                </button>
+
+                        </p>
+                    </div>
 
                 </div>
                 <div className="home__cta_product">

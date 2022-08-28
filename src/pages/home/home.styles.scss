@@ -2,9 +2,9 @@
     width: 100%;
     height: calc(100vh - 100px);
     position: relative;
-    background-size:140rem 140rem;
+    background-size:150rem 150rem;
     background-repeat: no-repeat;
-    background-position:top 10vh left 40vw;
+    background-position:top 0 left 30vw;
     margin: auto;
 
 
@@ -13,7 +13,7 @@
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
 
         
 
@@ -23,14 +23,16 @@
         width: 60%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 17rem;
 
        
         &__heading{
             font-size: 4rem;
             font-family: var(--font--primary);
-            line-height: 166%;
+            line-height: 148%;
             width:24ch;
             
             &_mini{
@@ -40,11 +42,21 @@
                 font-weight: 400;
                 color: var(--color-secondary);
                 align-self: flex-start;
+                justify-content: flex-end;
+                position: relative;
+                bottom: -1rem;
     
             }
 
         }
+
+        div{
+            position: relative;
+            left: 4rem;
+        }
+
         &__tagline{
+
             margin-top: 1rem;
             font-size: 2rem;
             font-family: var(--font-secondary);
@@ -52,7 +64,8 @@
             font-weight: 100;
             width: 36ch;
             &__reg_btn{
-
+                display: block;
+                position: relative;
                 margin-top: 6.3rem;
                 background-color: var(--color-secondary);
                 font-size: 2rem;
@@ -64,6 +77,11 @@
                 border: none;
                 box-shadow: 0 0.6rem 3rem 0 rgba(193,33,60,44);
                 cursor: pointer;
+                transition: 0.25s all ease-in-out;
+
+                &:hover{
+                    transform: translateY(-0.75rem);
+                }
             }
         }
 
@@ -77,9 +95,10 @@
         justify-content: center;
       }
     
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 800px) {
 
         &_content{
+            margin: auto;
             padding: 10px;
                 width: 100%;
             &__heading{
@@ -90,10 +109,13 @@
                 letter-spacing: 1pt;
                 font-size: 1rem;
             }
+            div{
+                left: 1rem;
+            }
             &__tagline{
                 font-size: 2rem;
-                min-width: 20ch;
                 width: auto;
+                max-width: 37ch;
                 &__reg_btn{
                     font-size: 1.7rem;
                     width: 15rem;
@@ -111,7 +133,7 @@
         display: flex;
         list-style: none;
         font-weight: 300;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-family: var(--color-secondary);
         height: fit-content;
         width: fit-content;
@@ -119,6 +141,7 @@
 
         li:nth-of-type(1){
             width: 11rem;
+            border-radius: 1px;
             height: 1px;
             background-color: var(--color-secondary);
             position: relative;
