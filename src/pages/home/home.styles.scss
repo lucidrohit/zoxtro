@@ -16,7 +16,7 @@
 
         
         @media screen and (max-width: 800px) {
-            margin-top: 5rem;
+            margin-top: 10rem;
         }
 
 
@@ -34,6 +34,7 @@
             z-index: 1;
 
             font-size: 4rem;
+            font-weight: 400;
             font-family: var(--font--primary);
             line-height: 148%;
             width:24ch;
@@ -68,7 +69,7 @@
             font-family: var(--font-secondary);
             line-height: 131%;
             font-weight: 100;
-            width: 36ch;
+            width: 37ch;
             &__reg_btn{
                 display: block;
                 position: relative;
@@ -100,11 +101,19 @@
             display: flex;
             align-items: flex-start;
             justify-content: center;
+            @media screen and (min-width: 800px) and (max-width:1122px){
+                padding-left: 12rem;
+                justify-content: flex-start !important;
+            }
 
         &__image{
-            margin-right: 12rem;
+            margin-right: -2rem;
             margin-top: 22rem;
             width: 42vw;
+
+            @media screen and (min-width: 800px) and (max-width:1122px){
+                max-width: 60vw !important;
+            }
         }
     }
 
@@ -116,10 +125,12 @@
 
         &_content{
             margin: auto;
+            padding: 2rem;
 
             &__heading{
-                width: 24ch;
+                width: 20ch;
                 font-size: 3.5rem;
+                margin-top: 0.5rem auto;
             }
             &_mini{
                 letter-spacing: 1pt;
@@ -131,7 +142,7 @@
             &__tagline{
                 font-size: 2rem;
                 width: auto;
-                max-width: 37ch;
+                max-width: 32ch;
                 &__reg_btn{
                     font-size: 1.7rem;
                     width: 15rem;
