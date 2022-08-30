@@ -1,6 +1,6 @@
 import "./contact.styles.scss"
 import backgroundSvg from "../../assets/contact_bg.svg"
-import contactImage from "../../assets/contact.png"
+import contactImage from "../../assets/contact.webp"
 
 const Contact = () => {
     return (
