@@ -1,0 +1,111 @@
+.contact{
+    height: calc(100vh - 13rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat; 
+    background-position: top -7rem left -5rem;
+    background-size: 110rem;
+    margin-top: 15rem;
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        margin: auto;
+
+
+        img{
+            position: relative;
+            left: 9rem;
+            bottom: 7rem;
+            width: 65rem;
+
+            @media screen and (min-width: 800px) and (max-width:1122px){
+                max-width: 60rem !important;
+                left: -10rem !important;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1122px) {
+        flex-direction: column;
+        &__content img{
+            left: unset;
+            bottom: unset;
+            max-width: 47rem;
+            min-width: 30rem;
+            margin-bottom: 5rem;
+        }
+    }
+    &__form{
+
+        padding: 2rem;
+        position: relative;
+        top: -5rem;
+        width: 100%;
+
+        form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__heading{
+            z-index: 1;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: 400;
+            font-family: var(--font--primary);
+            line-height: 148%;
+            width:24ch;
+        }
+
+        &__input{
+            
+            input,textarea{
+                background-color: #FDFAF9;
+                font-size: 2rem;
+                font-family: var(--font--secondary);
+                outline: 0;
+                border: 0;
+                border-radius: 0.7rem;
+                margin-top: 2.1rem;
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+                width: 32rem;
+
+                &::placeholder{
+                        border-radius: 1rem;
+                        color: #B6B6B6;
+                    }
+
+                }
+            input{
+                height: 6.2rem;
+            }
+            textarea{
+                padding-top: 2rem;
+                height: 18.8rem;
+                resize: none;
+            }
+        }
+        button{
+            margin-top: 6rem;
+        }
+
+    @media screen and (max-width: 1122px) {
+        position: relative;
+        left: -5rem;
+    }
+
+    @media screen and (max-width: 800px) {
+
+        left: unset;
+    }
+    }
+}

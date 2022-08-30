@@ -1,6 +1,5 @@
 import "./navbar.styles.scss"
 import Logo from "../../assets/logo.svg"
-import { Link, Outlet } from "react-router-dom"
 import { useState } from "react"
 
 
@@ -15,17 +14,17 @@ const NavBar = () => {
         <>
             <div className="navbar">
                 <div className="navbar__logo">
-                    <Link to="/" >
+                    <a href="/" >
                         <img src={Logo} alt="Logo" />
-                    </Link>
+                    </a>
                 </div>
                 <nav className="navbar__nav_section">
                     <ul className={activeHam ? " is-active" : " "}>
                         <li className={!contact ? " active" : " "}>
-                            <Link to="/" onClick={()=>setContact(false)}>About{'\u00A0'}</Link>
+                            <a href="#home" onClick={()=>setContact(false)}>About{'\u00A0'}</a>
                         </li>
                         <li className={contact ? " active" : " "}>
-                            <Link to="/contact" onClick={()=>setContact(true)}>Contact</Link>
+                            <a href="#contact" onClick={()=>setContact(true)}>Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -35,7 +34,6 @@ const NavBar = () => {
                     </span>
                 </div>
             </div>
-            <Outlet />
         </>
     )
 }
