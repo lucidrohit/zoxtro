@@ -1,12 +1,14 @@
 .contact{
     height: calc(100vh - 13rem);
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat; 
     background-position: top -7rem left -5rem;
     background-size: 110rem;
     margin-top: 15rem;
+
     &__content{
         width: 100%;
         display: flex;
@@ -104,8 +106,25 @@
     }
 
     @media screen and (max-width: 800px) {
-
         left: unset;
     }
+    @media screen and (max-width: 600px) {
+        font-size: 1.5rem;
+        input{
+            height: 5.5rem;
+        }
+        input,textarea{
+            width: 25rem;
+        }
+        button{
+            height: 5.8rem;
+            margin-bottom: 5rem;
+        }
     }
+    }
+
+    @media screen and (max-width: 800px) {
+        top: -10rem;
+    }
+
 }

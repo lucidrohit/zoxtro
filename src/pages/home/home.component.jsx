@@ -1,6 +1,5 @@
 import "./home.styles.scss"
 import ctaLogo from "../../assets/cta.svg"
-// import product from "../../assets/product.svg"
 import product from "../../assets/product.webp"
 
 const Home = () => {
