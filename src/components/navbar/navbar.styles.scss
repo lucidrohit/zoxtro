@@ -45,7 +45,10 @@
 
         }
         .active, li:hover{
-            color: var(--color-secondary);
+            a{
+                color: var(--color-secondary);
+
+            }
             &::after{
                 content: "";
                 position: absolute;
@@ -57,6 +60,15 @@
                 border-radius: 1px;
 
             }
+
+            
+        }
+
+        li:hover::after{
+            visibility: hidden;
+        }
+        li.active:hover::after{
+            visibility: visible;
         }
         @media screen  and (max-width:800px) {
             // visibility: hidden;

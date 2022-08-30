@@ -5,7 +5,7 @@ import product from "../../assets/product.webp"
 
 const Home = () => {
     return (
-        <div className="home" style={{ backgroundImage: `url(${ctaLogo})` }} >
+        <div className="home" id="home" style={{ backgroundImage: `url(${ctaLogo})` }} >
             <div className="home__cta"  >
                 <div className="home__cta_content">
                     <h1 className="home__cta_content__heading">
