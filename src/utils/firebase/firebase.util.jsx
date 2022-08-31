@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app"
-import { getAnalytics } from "firebase/analytics"
-
+import { getFirestore } from "@firebase/firestore"
 const firebaseConfig = {
   apiKey: "AIzaSyCkpKkyBbIx2hq51pXiOJr8WaMD1S7l3R8",
   authDomain: "zoxtro-mail-list.firebaseapp.com",
@@ -12,4 +11,6 @@ const firebaseConfig = {
 }
 
 const app = initializeApp(firebaseConfig)
-const analytics = getAnalytics(app)
+const db = getFirestore(app)
+
+export {db}
