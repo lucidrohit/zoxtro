@@ -11,6 +11,7 @@ const NavBar = ({isActive}) => {
 
 
     const handleHam = () => {
+        console.log(contact);
         setActiveHame(!activeHam)
     }
 
