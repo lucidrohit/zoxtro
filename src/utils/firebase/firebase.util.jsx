@@ -1,13 +1,13 @@
 import { initializeApp } from "firebase/app"
 import { getFirestore } from "@firebase/firestore"
 const firebaseConfig = {
-  apiKey: "AIzaSyCkpKkyBbIx2hq51pXiOJr8WaMD1S7l3R8",
-  authDomain: "zoxtro-mail-list.firebaseapp.com",
-  projectId: "zoxtro-mail-list",
-  storageBucket: "zoxtro-mail-list.appspot.com",
-  messagingSenderId: "255894575260",
-  appId: "1:255894575260:web:9e67012c55828cc2a57559",
-  measurementId: "G-M73Y2F8KZT"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
 }
 
 const app = initializeApp(firebaseConfig)
