@@ -5,7 +5,8 @@ import toast, { Toaster } from 'react-hot-toast';
 import { addDoc, collection } from "firebase/firestore"
 
 const ContactForm = () => {
-    const notify = () => toast.success('Successfully Submitted.');
+    const notifySuccess = () => toast.success('Successfully Submitted.');
+    const notifyFailed = () => toast.error('Inputs Required.');
 
     const [newName, setNewName] = useState("")
     const [newEmail, setNewEmail] = useState("")
@@ -14,11 +15,13 @@ const ContactForm = () => {
     const customerCollectionRef = collection(db, "customers")
 
     const createCustomer = async () => {
+        if(newName.trim() === "" || newEmail.trim() === "" || newMessage.trim() === "") return notifyFailed()
+        
         addDoc(customerCollectionRef, { name: newName, email: newEmail, message: newMessage, date: new Date() })
+        notifySuccess()
         setNewName("")
         setNewEmail("")
         setNewMessage("")
-        notify()
     }
 
 
