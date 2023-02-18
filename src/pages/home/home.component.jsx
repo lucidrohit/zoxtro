@@ -16,8 +16,8 @@ const Home = () => {
                     <div>
                         <p className="home__cta_content__tagline">
                             Combining the best embroidery designs with the best quality fabric out there to give you the experience that you deserve.
-                            <button className="home__cta_content__tagline__reg_btn" onClick={()=>window.location.assign("#contact")}>
-                                Pre-register
+                            <button className="home__cta_content__tagline__reg_btn" onClick={()=>window.location.replace("https://store.zoxtro.tech")}>
+                                Go to Store
                             </button>
 
                         </p>
